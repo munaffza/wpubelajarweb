@@ -1,11 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Input Atribut, Checkbox dan Radio</title>
+  </head>
+  <body>
+    <label for="name">Nama :</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Masukan tapi pake pengaman"
+      autocomplete="off"
+      autofocus
+      required
+    />
+    <br />
+    <h3>Pilihan Hobi</h3>
+    <label for="hobi1">
+      <input type="checkbox" name="hobi1" id="hobi1" value="gym" />gym
+    </label>
+    <br />
+
+    <label for="hobi2">
+      <input
+        type="checkbox"
+        name="hobi2"
+        id="hobi2"
+        value="berenang"
+        checked
+      />berenang
+    </label>
+
+    <br />
+
+    <h3>Pilihan Jenis Kelamin</h3>
+    <label for="pria">
+      <input
+        type="radio"
+        name="jenis_kelamin"
+        id="pria"
+        value="pria"
+        checked
+      />Pria
+    </label>
+    <br />
+
+    <label for="wanita">
+      <input
+        type="radio"
+        name="jenis_kelamin"
+        id="wanita"
+        value="wanita"
+      />wanita
+    </label>
+    <br />
+
+    <button type="submit">Simpan</button>
+  </body>
 </html>
